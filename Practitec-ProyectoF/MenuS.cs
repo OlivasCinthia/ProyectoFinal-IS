@@ -58,7 +58,7 @@ namespace Practitec_ProyectoF
 
         private void btnasesor_Click(object sender, EventArgs e)
         {
-            abrirformhijo(new Asesor());
+            abrirformhijo(new Alumno(usuario));
 
         }
 

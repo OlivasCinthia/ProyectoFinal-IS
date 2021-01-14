@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using System.Drawing;
 
 namespace Practitec_ProyectoF
 {
@@ -9,8 +8,17 @@ namespace Practitec_ProyectoF
         public Menu()
         {
             InitializeComponent();
-        }
 
+        }
+        public string user_alumno {
+            get;set;
+        }
+        
+        public Menu(string UA)
+        {
+            InitializeComponent();
+            user_alumno = UA;
+        }
         private void btncerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -39,19 +47,19 @@ namespace Practitec_ProyectoF
 
         private void label3_Click(object sender, EventArgs e)
         {
-            abrirformhijo(new Perfil());
+            abrirformhijo(new Perfil(user_alumno));
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
-            abrirformhijo(new Perfil());
+            abrirformhijo(new Perfil(user_alumno));
         }
 
         private void btnperfil_Click(object sender, EventArgs e)
         {
-            abrirformhijo(new Perfil());
+            abrirformhijo(new Perfil(user_alumno));
         }
-
+        
         private void label6_Click(object sender, EventArgs e)
         {
             abrirformhijo(new Asesor());
@@ -60,7 +68,7 @@ namespace Practitec_ProyectoF
 
         private void btnasesor_Click(object sender, EventArgs e)
         {
-            abrirformhijo(new Asesor());
+            abrirformhijo(new Asesor(user_alumno));
 
         }
 
@@ -89,14 +97,30 @@ namespace Practitec_ProyectoF
             abrirformhijo(new Ajustes());
         }
 
+        #endregion 
 
-        #endregion
 
+<<<<<<< Updated upstream
+=======
         private void button5_Click(object sender, EventArgs e)
         {
             login m = new login();
             this.Close();
             m.Show();
         }
+        
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     }
 }
