@@ -1,27 +1,27 @@
 ﻿using System;
-using System.Windows.Forms;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Practitec_ProyectoF
 {
-    public partial class Menu : Form
+    public partial class MenuS : Form
     {
-        public Menu()
+        public string usuario;
+        public MenuS()
         {
             InitializeComponent();
         }
-
-        private void btncerrar_Click(object sender, EventArgs e)
+        public MenuS(string user)
         {
-            Application.Exit();
+            InitializeComponent();
+            usuario = user;
         }
-
-        private void btnminimizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        #region formularioshijos
         private Form formularioactivo = null;
         private void abrirformhijo(Form formHijo)
         {
@@ -36,8 +36,7 @@ namespace Practitec_ProyectoF
             formHijo.BringToFront();
             formHijo.Show();
         } //Metodo para abrir formularios en menu
-
-        private void label3_Click(object sender, EventArgs e)
+        private void btnperfil_Click(object sender, EventArgs e)
         {
             abrirformhijo(new Perfil());
         }
@@ -47,14 +46,13 @@ namespace Practitec_ProyectoF
             abrirformhijo(new Perfil());
         }
 
-        private void btnperfil_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
             abrirformhijo(new Perfil());
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
-            abrirformhijo(new Asesor());
 
         }
 
@@ -64,33 +62,10 @@ namespace Practitec_ProyectoF
 
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void btncerrar_Click(object sender, EventArgs e)
         {
-            abrirformhijo(new Proyecto());
+            Application.Exit();
         }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-            abrirformhijo(new Proyecto());
-        }
-
-        private void btnproyecto_Click(object sender, EventArgs e)
-        {
-            abrirformhijo(new Proyecto());
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-            abrirformhijo(new Ajustes());
-        }
-
-        private void btnajustes_Click(object sender, EventArgs e)
-        {
-            abrirformhijo(new Ajustes());
-        }
-
-
-        #endregion
 
         private void button5_Click(object sender, EventArgs e)
         {

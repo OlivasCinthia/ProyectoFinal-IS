@@ -75,7 +75,7 @@ namespace Practitec_ProyectoF
                 string contra_Asesor = dsAsesor.Tables[0].Rows[0]["Contra_asesor"].ToString().Trim();
                 if (cuenta_Asesor == txtusuario.Text.Trim() && contra_Asesor == txtcontra.Text.Trim())
                 {
-                    Menu m = new Menu();
+                    MenuS m = new MenuS(cuenta_Asesor );
                     m.Show();
                 }
             }
