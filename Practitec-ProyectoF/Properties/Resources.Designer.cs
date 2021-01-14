@@ -63,6 +63,16 @@ namespace Practitec_ProyectoF.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backbutton_104978 {
+            get {
+                object obj = ResourceManager.GetObject("backbutton_104978", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cerrar {
             get {
                 object obj = ResourceManager.GetObject("cerrar", resourceCulture);
@@ -86,6 +96,36 @@ namespace Practitec_ProyectoF.Properties {
         internal static System.Drawing.Bitmap contr {
             get {
                 object obj = ResourceManager.GetObject("contr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap copy_two_paper_sheets_interface_symbol_icon_icons_com_73283 {
+            get {
+                object obj = ResourceManager.GetObject("copy-two-paper-sheets-interface-symbol_icon-icons.com_73283", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap emblemremove_93481 {
+            get {
+                object obj = ResourceManager.GetObject("emblemremove_93481", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap emblemunreadable_93487 {
+            get {
+                object obj = ResourceManager.GetObject("emblemunreadable_93487", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,6 +306,16 @@ namespace Practitec_ProyectoF.Properties {
         internal static System.Drawing.Bitmap Practitec_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("Practitec-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap production_process_icon_149888 {
+            get {
+                object obj = ResourceManager.GetObject("production_process_icon_149888", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

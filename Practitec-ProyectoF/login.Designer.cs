@@ -40,14 +40,15 @@ namespace Practitec_ProyectoF
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnminimizar = new System.Windows.Forms.PictureBox();
+            this.btncerrar = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btncerrar = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,6 +89,7 @@ namespace Practitec_ProyectoF
             this.linkLabel1.TabIndex = 6;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Recuperar contraseña";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // shapeContainer1
             // 
@@ -158,21 +160,34 @@ namespace Practitec_ProyectoF
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(67)))), ((int)(((byte)(96)))));
+            this.panel1.Controls.Add(this.btnminimizar);
+            this.panel1.Controls.Add(this.btncerrar);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(393, 20);
+            this.panel1.Size = new System.Drawing.Size(393, 30);
             this.panel1.TabIndex = 15;
             // 
             // btnminimizar
             // 
-            this.btnminimizar.Image = global::Practitec_ProyectoF.Properties.Resources.minimiza;
-            this.btnminimizar.Location = new System.Drawing.Point(337, 20);
+            this.btnminimizar.Image = global::Practitec_ProyectoF.Properties.Resources.emblemremove_93481;
+            this.btnminimizar.Location = new System.Drawing.Point(335, 0);
             this.btnminimizar.Name = "btnminimizar";
-            this.btnminimizar.Size = new System.Drawing.Size(25, 25);
+            this.btnminimizar.Size = new System.Drawing.Size(30, 30);
             this.btnminimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnminimizar.TabIndex = 8;
             this.btnminimizar.TabStop = false;
             this.btnminimizar.Click += new System.EventHandler(this.btnminimizar_Click);
+            // 
+            // btncerrar
+            // 
+            this.btncerrar.Image = global::Practitec_ProyectoF.Properties.Resources.emblemunreadable_93487;
+            this.btncerrar.Location = new System.Drawing.Point(363, 0);
+            this.btncerrar.Name = "btncerrar";
+            this.btncerrar.Size = new System.Drawing.Size(30, 30);
+            this.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btncerrar.TabIndex = 9;
+            this.btncerrar.TabStop = false;
+            this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
             // pictureBox5
             // 
@@ -194,17 +209,6 @@ namespace Practitec_ProyectoF
             this.pictureBox4.TabIndex = 10;
             this.pictureBox4.TabStop = false;
             // 
-            // btncerrar
-            // 
-            this.btncerrar.Image = global::Practitec_ProyectoF.Properties.Resources.cerrar2;
-            this.btncerrar.Location = new System.Drawing.Point(363, 17);
-            this.btncerrar.Name = "btncerrar";
-            this.btncerrar.Size = new System.Drawing.Size(30, 30);
-            this.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btncerrar.TabIndex = 9;
-            this.btncerrar.TabStop = false;
-            this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -218,18 +222,17 @@ namespace Practitec_ProyectoF
             // 
             // login
             // 
+            this.AcceptButton = this.btnacceder;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(243)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(393, 462);
-            this.Controls.Add(this.btnminimizar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtcontra);
             this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.btncerrar);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.btnregistrar);
             this.Controls.Add(this.btnacceder);
@@ -240,10 +243,12 @@ namespace Practitec_ProyectoF
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.login_Load);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

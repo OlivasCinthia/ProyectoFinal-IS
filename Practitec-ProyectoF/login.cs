@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
@@ -55,8 +56,13 @@ namespace Practitec_ProyectoF
 
 
             //ASESOR LOGIN
-            string CMDS = string.Format("Select * FROM User_Asesor where user_asesor = '{0}' AND Contra_asesor = '{1}'", txtusuario.Text.Trim(), txtcontra.Text.Trim());
+            string CMDS = string.Format("Select * FROM User_Asesor where user_asesor = '{0}' AND Contra_asesor  = '{1}'", txtusuario.Text.Trim(), txtcontra.Text.Trim());
             DataSet dsAsesor = Class1.Ejecutar(CMDS);
+
+            //Administrador LOGIN 
+            string CM = string.Format("Select * FROM Administrador where usuarioADM = '{0}' AND contraADM= '{1}'", txtusuario.Text.Trim(), txtcontra.Text.Trim());
+            DataSet dsAdmin = Class1.Ejecutar(CM);
+
 
             //Comparaciones
             if (dsAlumno.Tables[0].Rows.Count == 1)
@@ -66,6 +72,7 @@ namespace Practitec_ProyectoF
                 if (cuenta_Alumno == txtusuario.Text.Trim() && contra_Alumno == txtcontra.Text.Trim())
                 {
                     Menu m = new Menu(cuenta_Alumno);
+                    this.Hide();
                     m.Show();
                 }
             }
@@ -76,13 +83,23 @@ namespace Practitec_ProyectoF
                 if (cuenta_Asesor == txtusuario.Text.Trim() && contra_Asesor == txtcontra.Text.Trim())
                 {
                     MenuS m = new MenuS(cuenta_Asesor );
+                    this.Hide();
                     m.Show();
                 }
             }
-
+            else if (dsAdmin.Tables[0].Rows.Count == 1)
+            {
+                string cuenta_Admin = dsAdmin.Tables[0].Rows[0]["usuarioADM"].ToString().Trim();
+                string contra_Admin = dsAdmin.Tables[0].Rows[0]["contraADM"].ToString().Trim();
+                if (cuenta_Admin == txtusuario.Text.Trim() && contra_Admin == txtcontra.Text.Trim())
+                {
+                   MenuADM mad = new MenuADM(cuenta_Admin);
+                    this.Hide();
+                    mad.Show();
+                }
+            }
             else
                 MessageBox.Show("Usuario o contraseña incorrecto");
-
         }
         private void txtcontra_Enter(object sender, EventArgs e)
         {
@@ -103,8 +120,20 @@ namespace Practitec_ProyectoF
 
             }
         }
+
         #endregion
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var recovery = new FormRecuperarContra();
+            this.Hide();
+            recovery.ShowDialog();
+            
+        }
 
+        private void login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

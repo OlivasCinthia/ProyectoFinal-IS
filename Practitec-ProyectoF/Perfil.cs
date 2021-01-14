@@ -4,6 +4,7 @@ using System;
 using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Practitec_ProyectoF
 {
@@ -11,7 +12,7 @@ namespace Practitec_ProyectoF
     {
         //DataSet dsAlumno;
 
-        public string user_Alumno
+       public string user_Alumno
         { get;set;  }
         
         public Perfil(string UA)
@@ -111,7 +112,7 @@ namespace Practitec_ProyectoF
                 }
                 if (!string.IsNullOrEmpty(textBox9.Text))
                 {
-                    string CMDA2 = string.Format("UPDATE User_Alumno SET Contra_Alumno='{1}' where nomb_user = '{0}'", user_Alumno, textBox2.Text);
+                    string CMDA2 = string.Format("UPDATE User_Alumno SET Contra_Alumno='{1}' where nomb_user = '{0}'", user_Alumno, textBox9.Text);
                     DataSet dsAlumno2 = Class1.Ejecutar(CMDA2);
 
 
@@ -122,8 +123,7 @@ namespace Practitec_ProyectoF
             else {
                 MessageBox.Show("Las Contraseñas no coinciden","Error");
 
-            }
-                    
+            }                  
 
 
         }

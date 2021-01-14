@@ -12,7 +12,7 @@ namespace Practitec_ProyectoF
 {
     public partial class MenuS : Form
     {
-        public string usuario;
+        public string usuario { get; set; }
         public MenuS()
         {
             InitializeComponent();
@@ -38,17 +38,17 @@ namespace Practitec_ProyectoF
         } //Metodo para abrir formularios en menu
         private void btnperfil_Click(object sender, EventArgs e)
         {
-            abrirformhijo(new Perfil());
+            abrirformhijo(new PerfilS(usuario));
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
-            abrirformhijo(new Perfil());
+            abrirformhijo(new PerfilS(usuario));
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
-            abrirformhijo(new Perfil());
+            abrirformhijo(new PerfilS(usuario));
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -72,6 +72,16 @@ namespace Practitec_ProyectoF
             login m = new login();
             this.Close();
             m.Show();
+        }
+
+        private void btnminimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            abrirformhijo(new Alumno(usuario));
         }
     }
 }

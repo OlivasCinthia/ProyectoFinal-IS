@@ -83,19 +83,19 @@ namespace Practitec_ProyectoF
         }
         private void textBox8_Enter(object sender, EventArgs e)
         {
-            if (textBox1.Text == "Número de celular")
+            if (textBox8.Text == "Número de celular")
             {
-                textBox1.Text = "";
-                textBox1.ForeColor = Color.Black;
+                textBox8.Text = "";
+                textBox8.ForeColor = Color.Black;
             }
         }
 
         private void textBox8_Leave(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
+            if (textBox8.Text == "")
             {
-                textBox1.Text = "Número de celular";
-                textBox1.ForeColor = Color.Black;
+                textBox8.Text = "Número de celular";
+                textBox8.ForeColor = Color.Black;
             }
         }
 

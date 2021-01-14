@@ -36,17 +36,17 @@ namespace Practitec_ProyectoF
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Heading", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(212, 185);
+            this.label1.Location = new System.Drawing.Point(238, 140);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 28);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "VENTAJA AJUSTES";
+            this.label1.Size = new System.Drawing.Size(173, 28);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Ajustes del sistema";
             // 
             // Ajustes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(665, 398);
+            this.ClientSize = new System.Drawing.Size(649, 359);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Ajustes";

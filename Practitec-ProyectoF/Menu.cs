@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace Practitec_ProyectoF
 {
@@ -10,9 +11,7 @@ namespace Practitec_ProyectoF
             InitializeComponent();
 
         }
-        public string user_alumno {
-            get;set;
-        }
+        public string user_alumno {get;set; }
         
         public Menu(string UA)
         {
@@ -62,7 +61,7 @@ namespace Practitec_ProyectoF
         
         private void label6_Click(object sender, EventArgs e)
         {
-            abrirformhijo(new Asesor());
+            abrirformhijo(new Asesor(user_alumno));
 
         }
 
@@ -97,16 +96,12 @@ namespace Practitec_ProyectoF
             abrirformhijo(new Ajustes());
         }
 
-        #endregion 
 
+        #endregion
 
-<<<<<<< Updated upstream
-=======
         private void button5_Click(object sender, EventArgs e)
         {
-            login m = new login();
-            this.Close();
-            m.Show();
+            Application.Restart();
         }
         
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -118,9 +113,5 @@ namespace Practitec_ProyectoF
         {
 
         }
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     }
 }

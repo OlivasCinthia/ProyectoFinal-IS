@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdministrarCorreos.cs" />
     <Compile Include="Ajustes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +71,12 @@
     <Compile Include="Asesor.Designer.cs">
       <DependentUpon>Asesor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRecuperarContra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRecuperarContra.Designer.cs">
+      <DependentUpon>FormRecuperarContra.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +89,12 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuADM.Designer.cs">
+      <DependentUpon>MenuADM.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +106,18 @@
     </Compile>
     <Compile Include="Perfil.Designer.cs">
       <DependentUpon>Perfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerfilADM.Designer.cs">
+      <DependentUpon>PerfilADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerfilS.Designer.cs">
+      <DependentUpon>PerfilS.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -113,6 +138,19 @@
     <Compile Include="Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistroAsesores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroAsesores.Designer.cs">
+      <DependentUpon>RegistroAsesores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServidordeCorreo.cs" />
+    <Compile Include="VinculacionAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VinculacionAlumno.Designer.cs">
+      <DependentUpon>VinculacionAlumno.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Ajustes.resx">
       <DependentUpon>Ajustes.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,17 +160,29 @@
     <EmbeddedResource Include="Asesor.resx">
       <DependentUpon>Asesor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormRecuperarContra.resx">
+      <DependentUpon>FormRecuperarContra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuADM.resx">
+      <DependentUpon>MenuADM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuS.resx">
       <DependentUpon>MenuS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Perfil.resx">
       <DependentUpon>Perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilADM.resx">
+      <DependentUpon>PerfilADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilS.resx">
+      <DependentUpon>PerfilS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -149,6 +199,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroAsesores.resx">
+      <DependentUpon>RegistroAsesores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VinculacionAlumno.resx">
+      <DependentUpon>VinculacionAlumno.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -239,6 +295,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\iossettings_6643.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backbutton_104978.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emblemunreadable_93487.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emblemremove_93481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy-two-paper-sheets-interface-symbol_icon-icons.com_73283.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\production_process_icon_149888.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

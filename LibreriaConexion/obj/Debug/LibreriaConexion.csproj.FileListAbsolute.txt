@@ -5,7 +5,7 @@ C:\Users\HP\source\repos\Practitec-ProyectoF\LibreriaConexion\obj\Debug\Libreria
 C:\Users\HP\source\repos\Practitec-ProyectoF\LibreriaConexion\obj\Debug\LibreriaConexion.pdb
 C:\Users\HP\Desktop\Practitec-ProyectoF\LibreriaConexion\bin\Debug\LibreriaConexion.dll
 C:\Users\HP\Desktop\Practitec-ProyectoF\LibreriaConexion\bin\Debug\LibreriaConexion.pdb
-C:\Users\HP\Desktop\Practitec-ProyectoF\LibreriaConexion\obj\Debug\LibreriaConexion.csprojResolveAssemblyReference.cache
 C:\Users\HP\Desktop\Practitec-ProyectoF\LibreriaConexion\obj\Debug\LibreriaConexion.csproj.CoreCompileInputs.cache
 C:\Users\HP\Desktop\Practitec-ProyectoF\LibreriaConexion\obj\Debug\LibreriaConexion.dll
 C:\Users\HP\Desktop\Practitec-ProyectoF\LibreriaConexion\obj\Debug\LibreriaConexion.pdb
+C:\Users\HP\Desktop\Practitec-ProyectoF\LibreriaConexion\obj\Debug\LibreriaConexion.csprojAssemblyReference.cache
