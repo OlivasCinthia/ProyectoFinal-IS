@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practitec-ProyectoF", "Practitec-ProyectoF\Practitec-ProyectoF.csproj", "{92EF77B3-03C5-4CF9-9E84-0B301781B4CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaConexion", "LibreriaConexion\LibreriaConexion.csproj", "{1A55BB28-0174-4BE1-9F84-01B139729E0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92EF77B3-03C5-4CF9-9E84-0B301781B4CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92EF77B3-03C5-4CF9-9E84-0B301781B4CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92EF77B3-03C5-4CF9-9E84-0B301781B4CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92EF77B3-03C5-4CF9-9E84-0B301781B4CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A55BB28-0174-4BE1-9F84-01B139729E0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A55BB28-0174-4BE1-9F84-01B139729E0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A55BB28-0174-4BE1-9F84-01B139729E0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A55BB28-0174-4BE1-9F84-01B139729E0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8635281-74DB-49FB-AC15-BB4EA40BD03E}
+	EndGlobalSection
+EndGlobal
