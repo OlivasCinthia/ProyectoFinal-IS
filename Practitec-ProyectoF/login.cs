@@ -65,7 +65,7 @@ namespace Practitec_ProyectoF
                 string contra_Alumno = dsAlumno.Tables[0].Rows[0]["Contra_Alumno"].ToString().Trim();
                 if (cuenta_Alumno == txtusuario.Text.Trim() && contra_Alumno == txtcontra.Text.Trim())
                 {
-                    Menu m = new Menu();
+                    Menu m = new Menu(cuenta_Alumno);
                     m.Show();
                 }
             }

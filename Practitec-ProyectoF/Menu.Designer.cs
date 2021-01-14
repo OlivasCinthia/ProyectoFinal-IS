@@ -344,6 +344,7 @@ namespace Practitec_ProyectoF
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(671, 398);
             this.panel3.TabIndex = 14;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // groupBoxajustes
             // 
@@ -608,6 +609,7 @@ namespace Practitec_ProyectoF
             this.label2.TabIndex = 18;
             this.label2.Text = "Perfil";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox8
             // 
