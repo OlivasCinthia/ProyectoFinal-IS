@@ -118,6 +118,9 @@ namespace Practitec_ProyectoF
         {
 
         }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
 }

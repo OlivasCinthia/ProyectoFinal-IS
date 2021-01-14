@@ -63,4 +63,7 @@ C:\Users\zotic\OneDrive\Documents\Alan\Practitec-MAU-2\Practitec-ProyectoF\Pract
 C:\Users\zotic\OneDrive\Documents\Alan\Practitec-MAU-2\Practitec-ProyectoF\Practitec-ProyectoF\obj\Debug\Practitec-ProyectoF.exe
 C:\Users\zotic\OneDrive\Documents\Alan\Practitec-MAU-2\Practitec-ProyectoF\Practitec-ProyectoF\obj\Debug\Practitec-ProyectoF.pdb
 C:\Users\zotic\OneDrive\Documents\Alan\Practitec-MAU-2\Practitec-ProyectoF\Practitec-ProyectoF\obj\Debug\Practitec_ProyectoF.Alumno.resources
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
